@@ -3,7 +3,7 @@
 Description: The ledger app is a simple leder program which allows users to do the following things
 - Add multiple ledgers
 - Add multiple items for each ledger
-- Export feature to pdf & svg
+- Export ledger(s) to pdf & svg
 
 ## Ledgers
 A ledger is a book, a self contained item which serves as a record for book keeping, invoicing, financial balancing, Reciept collection, etc. Inside of each ledger can be one or multiple items or records. 
