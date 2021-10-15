@@ -1,4 +1,4 @@
-# Ledger_iOS
+# Ledger iOS
 
 Description: The ledger app is a simple leder program which allows users to do the following things
 - Add multiple ledgers
