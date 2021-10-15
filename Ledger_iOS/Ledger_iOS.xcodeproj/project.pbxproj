@@ -3,27 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D57F9FE4267186F600F8DB3E /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9FE3267186F600F8DB3E /* PersistenceManager.swift */; };
+		D5A1EC832667149F00D49E2A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1EC822667149F00D49E2A /* UIView+Extensions.swift */; };
+		D5A1EC892667240B00D49E2A /* RecordCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1EC882667240B00D49E2A /* RecordCellView.swift */; };
+		D5A1EC8B266726F500D49E2A /* EntriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1EC8A266726F500D49E2A /* EntriesDetailViewController.swift */; };
+		D5A1EC922667284300D49E2A /* EntriesDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1EC912667284300D49E2A /* EntriesDetailCellView.swift */; };
 		D5FDACD126606A740093020E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FDACD026606A740093020E /* AppDelegate.swift */; };
 		D5FDACD326606A740093020E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FDACD226606A740093020E /* SceneDelegate.swift */; };
-		D5FDACD526606A740093020E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FDACD426606A740093020E /* ViewController.swift */; };
-		D5FDACD826606A740093020E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FDACD626606A740093020E /* Main.storyboard */; };
+		D5FDACD526606A740093020E /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FDACD426606A740093020E /* RecordsViewController.swift */; };
 		D5FDACDA26606A760093020E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FDACD926606A760093020E /* Assets.xcassets */; };
 		D5FDACDD26606A760093020E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FDACDB26606A760093020E /* LaunchScreen.storyboard */; };
+		D5FDACE7266073020093020E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D5FDACE6266073010093020E /* Podfile */; };
+		EA9945C4BD5EDFB99B2A837F /* Pods_Ledger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBC6029EACC93E7B632F2CF /* Pods_Ledger_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDB69DFC04FC09E2376F75C6 /* Pods-Ledger_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D57F9FE3267186F600F8DB3E /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		D5A1EC822667149F00D49E2A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D5A1EC882667240B00D49E2A /* RecordCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCellView.swift; sourceTree = "<group>"; };
+		D5A1EC8A266726F500D49E2A /* EntriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesDetailViewController.swift; sourceTree = "<group>"; };
+		D5A1EC912667284300D49E2A /* EntriesDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesDetailCellView.swift; sourceTree = "<group>"; };
 		D5FDACCD26606A740093020E /* Ledger_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FDACD026606A740093020E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5FDACD226606A740093020E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5FDACD426606A740093020E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D5FDACD726606A740093020E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5FDACD426606A740093020E /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		D5FDACD926606A760093020E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5FDACDC26606A760093020E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5FDACDE26606A760093020E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FDACE6266073010093020E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		ECBC6029EACC93E7B632F2CF /* Pods_Ledger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledger_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF977ED9EFB77B58C86C1C11 /* Pods-Ledger_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.release.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9945C4BD5EDFB99B2A837F /* Pods_Ledger_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67F116FDF42CB0A1BB06F5A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC6029EACC93E7B632F2CF /* Pods_Ledger_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5BB511C082B813872B0D68C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDB69DFC04FC09E2376F75C6 /* Pods-Ledger_iOS.debug.xcconfig */,
+				EF977ED9EFB77B58C86C1C11 /* Pods-Ledger_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5A1EC84266722A800D49E2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5A1EC822667149F00D49E2A /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D5A1EC862667230600D49E2A /* Main-Landing */ = {
+			isa = PBXGroup;
+			children = (
+				D5FDACD426606A740093020E /* RecordsViewController.swift */,
+				D5A1EC87266723EF00D49E2A /* Views */,
+			);
+			path = "Main-Landing";
+			sourceTree = "<group>";
+		};
+		D5A1EC87266723EF00D49E2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5A1EC882667240B00D49E2A /* RecordCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5A1EC8F2667280E00D49E2A /* Entries-Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D5A1EC902667283500D49E2A /* Views */,
+				D5A1EC8A266726F500D49E2A /* EntriesDetailViewController.swift */,
+			);
+			path = "Entries-Detail";
+			sourceTree = "<group>";
+		};
+		D5A1EC902667283500D49E2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5A1EC912667284300D49E2A /* EntriesDetailCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D5FDACC426606A740093020E = {
 			isa = PBXGroup;
 			children = (
+				D5FDACE6266073010093020E /* Podfile */,
 				D5FDACCF26606A740093020E /* Ledger_iOS */,
 				D5FDACCE26606A740093020E /* Products */,
+				A5BB511C082B813872B0D68C /* Pods */,
+				67F116FDF42CB0A1BB06F5A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +133,15 @@
 		D5FDACCF26606A740093020E /* Ledger_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D5FDACD026606A740093020E /* AppDelegate.swift */,
+				D5A1EC8F2667280E00D49E2A /* Entries-Detail */,
+				D5A1EC862667230600D49E2A /* Main-Landing */,
 				D5FDACD226606A740093020E /* SceneDelegate.swift */,
-				D5FDACD426606A740093020E /* ViewController.swift */,
-				D5FDACD626606A740093020E /* Main.storyboard */,
+				D5FDACD026606A740093020E /* AppDelegate.swift */,
+				D5A1EC84266722A800D49E2A /* Extensions */,
 				D5FDACD926606A760093020E /* Assets.xcassets */,
 				D5FDACDB26606A760093020E /* LaunchScreen.storyboard */,
 				D5FDACDE26606A760093020E /* Info.plist */,
+				D57F9FE3267186F600F8DB3E /* PersistenceManager.swift */,
 			);
 			path = Ledger_iOS;
 			sourceTree = "<group>";
@@ -74,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5FDACE126606A760093020E /* Build configuration list for PBXNativeTarget "Ledger_iOS" */;
 			buildPhases = (
+				E9A5849E78484716DE25CA56 /* [CP] Check Pods Manifest.lock */,
 				D5FDACC926606A740093020E /* Sources */,
 				D5FDACCA26606A740093020E /* Frameworks */,
 				D5FDACCB26606A740093020E /* Resources */,
+				8D812222934985C6B3384C72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +207,73 @@
 			files = (
 				D5FDACDD26606A760093020E /* LaunchScreen.storyboard in Resources */,
 				D5FDACDA26606A760093020E /* Assets.xcassets in Resources */,
-				D5FDACD826606A740093020E /* Main.storyboard in Resources */,
+				D5FDACE7266073020093020E /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D812222934985C6B3384C72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A5849E78484716DE25CA56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ledger_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5FDACC926606A740093020E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5FDACD526606A740093020E /* ViewController.swift in Sources */,
+				D5FDACD526606A740093020E /* RecordsViewController.swift in Sources */,
 				D5FDACD126606A740093020E /* AppDelegate.swift in Sources */,
+				D5A1EC892667240B00D49E2A /* RecordCellView.swift in Sources */,
+				D57F9FE4267186F600F8DB3E /* PersistenceManager.swift in Sources */,
+				D5A1EC922667284300D49E2A /* EntriesDetailCellView.swift in Sources */,
+				D5A1EC832667149F00D49E2A /* UIView+Extensions.swift in Sources */,
 				D5FDACD326606A740093020E /* SceneDelegate.swift in Sources */,
+				D5A1EC8B266726F500D49E2A /* EntriesDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D5FDACD626606A740093020E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5FDACD726606A740093020E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D5FDACDB26606A760093020E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +403,7 @@
 		};
 		D5FDACE226606A760093020E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB69DFC04FC09E2376F75C6 /* Pods-Ledger_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +423,7 @@
 		};
 		D5FDACE326606A760093020E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF977ED9EFB77B58C86C1C11 /* Pods-Ledger_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
