@@ -17,8 +17,8 @@ Basic structure
 <img width="1488" alt="Screen Shot 2021-10-24 at 6 55 54 PM" src="https://user-images.githubusercontent.com/39914021/139713075-1560f25f-c7ff-4734-b16c-2395cb979c50.png">
 
 
-Data structures
+Page structures
 <img width="1472" alt="Screen Shot 2021-10-24 at 6 56 13 PM" src="https://user-images.githubusercontent.com/39914021/139713110-b2904a48-0003-4706-ac12-4452c0b6df93.png">
 
-
+Data structures
 <img width="1468" alt="Screen Shot 2021-10-24 at 6 56 23 PM" src="https://user-images.githubusercontent.com/39914021/139713117-192595b1-6eb2-4451-8a77-d9d3c576148c.png">
