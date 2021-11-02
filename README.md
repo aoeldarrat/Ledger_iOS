@@ -22,3 +22,5 @@ Page structures
 
 Data structures
 <img width="1468" alt="Screen Shot 2021-10-24 at 6 56 23 PM" src="https://user-images.githubusercontent.com/39914021/139713117-192595b1-6eb2-4451-8a77-d9d3c576148c.png">
+
+Pdf brainstorming doc - [Ledger brainstorm - Oct 24, 2021.pdf](https://github.com/aoeldarrat/Ledger_iOS/files/7461890/Ledger.brainstorm.-.Oct.24.2021.pdf)
