@@ -14,12 +14,42 @@ enum BalanceDirection: Int, Codable, Equatable  {
     case neutral = -1//No gain or loss
 }
 
-struct Record: Codable, Equatable {
-    var balance: Balance
-    var amount: Float
-    var numberOfEntries: Int
-    var entries: [Entry]
+struct User: Codable, Equatable {
+    var id: String
+    var preferredLanguage: String
+    var preferredCurrency: String
+    var books: [Book]
+}
+
+struct Book: Codable, Equatable {
+    var id: String
     var name: String
+    var description: String
+    var createdDate: Date
+    var lastEditDate: String
+    var records: [Record]
+    var balance: Balance
+}
+
+struct Record: Codable, Equatable {
+    var id: String
+    var bookId: String
+    var name: String
+    var description: String
+    var createdDate: Date
+    var lastEditDate: Date
+    var entries: [Entry]
+    var balance: Balance
+}
+
+struct Item: Codable, Equatable {
+    var id: String
+    var recordId: String
+    var name: String
+    var description: String
+    var createdDate: Date
+    var lastEditDate: Date
+    var balance: Balance
 }
 
 struct Entry: Codable, Equatable {
@@ -31,11 +61,11 @@ struct Entry: Codable, Equatable {
 }
 
 struct Balance: Codable, Equatable {
-
     var amount: Float
     var direction: BalanceDirection
 
 }
+
 class PersistenceManager {
     
     private let defaults = UserDefaults.standard
