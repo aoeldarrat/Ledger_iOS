@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D57F9FE4267186F600F8DB3E /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F9FE3267186F600F8DB3E /* PersistenceManager.swift */; };
+		3C25266A274052EA00704DF4 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C252669274052EA00704DF4 /* BaseService.swift */; };
+		3C25266C2740539400704DF4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25266B2740539400704DF4 /* User.swift */; };
+		3C25266E2740559A00704DF4 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25266D2740559A00704DF4 /* Book.swift */; };
+		3C2526702740560C00704DF4 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25266F2740560C00704DF4 /* Record.swift */; };
+		3C2526722740566B00704DF4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2526712740566B00704DF4 /* Item.swift */; };
+		3C252674274056E600704DF4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C252673274056E600704DF4 /* Entry.swift */; };
+		3C2526762740572D00704DF4 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2526752740572D00704DF4 /* Balance.swift */; };
+		3C2526782740577F00704DF4 /* BalanceDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2526772740577F00704DF4 /* BalanceDirection.swift */; };
+		3C25267A274057B400704DF4 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C252679274057B400704DF4 /* PersistenceManager.swift */; };
+		3C25267F27405B8700704DF4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3C25267E27405B8700704DF4 /* .gitignore */; };
 		D5A1EC832667149F00D49E2A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1EC822667149F00D49E2A /* UIView+Extensions.swift */; };
 		D5A1EC892667240B00D49E2A /* RecordCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1EC882667240B00D49E2A /* RecordCellView.swift */; };
 		D5A1EC8B266726F500D49E2A /* EntriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A1EC8A266726F500D49E2A /* EntriesDetailViewController.swift */; };
@@ -22,8 +31,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C252669274052EA00704DF4 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		3C25266B2740539400704DF4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C25266D2740559A00704DF4 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		3C25266F2740560C00704DF4 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3C2526712740566B00704DF4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3C252673274056E600704DF4 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		3C2526752740572D00704DF4 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		3C2526772740577F00704DF4 /* BalanceDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceDirection.swift; sourceTree = "<group>"; };
+		3C252679274057B400704DF4 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		3C25267E27405B8700704DF4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CDB69DFC04FC09E2376F75C6 /* Pods-Ledger_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D57F9FE3267186F600F8DB3E /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		D5A1EC822667149F00D49E2A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D5A1EC882667240B00D49E2A /* RecordCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCellView.swift; sourceTree = "<group>"; };
 		D5A1EC8A266726F500D49E2A /* EntriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesDetailViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +70,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2526672740504600704DF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C25266B2740539400704DF4 /* User.swift */,
+				3C25266D2740559A00704DF4 /* Book.swift */,
+				3C25266F2740560C00704DF4 /* Record.swift */,
+				3C2526712740566B00704DF4 /* Item.swift */,
+				3C252673274056E600704DF4 /* Entry.swift */,
+				3C2526752740572D00704DF4 /* Balance.swift */,
+				3C2526772740577F00704DF4 /* BalanceDirection.swift */,
+				3C252679274057B400704DF4 /* PersistenceManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C2526682740505000704DF4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3C252669274052EA00704DF4 /* BaseService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		67F116FDF42CB0A1BB06F5A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +155,9 @@
 		D5FDACC426606A740093020E = {
 			isa = PBXGroup;
 			children = (
+				3C25267E27405B8700704DF4 /* .gitignore */,
+				3C2526682740505000704DF4 /* Networking */,
+				3C2526672740504600704DF4 /* Models */,
 				D5FDACE6266073010093020E /* Podfile */,
 				D5FDACCF26606A740093020E /* Ledger_iOS */,
 				D5FDACCE26606A740093020E /* Products */,
@@ -141,7 +185,6 @@
 				D5FDACD926606A760093020E /* Assets.xcassets */,
 				D5FDACDB26606A760093020E /* LaunchScreen.storyboard */,
 				D5FDACDE26606A760093020E /* Info.plist */,
-				D57F9FE3267186F600F8DB3E /* PersistenceManager.swift */,
 			);
 			path = Ledger_iOS;
 			sourceTree = "<group>";
@@ -205,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C25267F27405B8700704DF4 /* .gitignore in Resources */,
 				D5FDACDD26606A760093020E /* LaunchScreen.storyboard in Resources */,
 				D5FDACDA26606A760093020E /* Assets.xcassets in Resources */,
 				D5FDACE7266073020093020E /* Podfile in Resources */,
@@ -260,14 +304,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C252674274056E600704DF4 /* Entry.swift in Sources */,
+				3C2526762740572D00704DF4 /* Balance.swift in Sources */,
 				D5FDACD526606A740093020E /* RecordsViewController.swift in Sources */,
 				D5FDACD126606A740093020E /* AppDelegate.swift in Sources */,
+				3C2526702740560C00704DF4 /* Record.swift in Sources */,
 				D5A1EC892667240B00D49E2A /* RecordCellView.swift in Sources */,
-				D57F9FE4267186F600F8DB3E /* PersistenceManager.swift in Sources */,
+				3C25266E2740559A00704DF4 /* Book.swift in Sources */,
+				3C2526782740577F00704DF4 /* BalanceDirection.swift in Sources */,
 				D5A1EC922667284300D49E2A /* EntriesDetailCellView.swift in Sources */,
+				3C2526722740566B00704DF4 /* Item.swift in Sources */,
+				3C25267A274057B400704DF4 /* PersistenceManager.swift in Sources */,
 				D5A1EC832667149F00D49E2A /* UIView+Extensions.swift in Sources */,
 				D5FDACD326606A740093020E /* SceneDelegate.swift in Sources */,
 				D5A1EC8B266726F500D49E2A /* EntriesDetailViewController.swift in Sources */,
+				3C25266C2740539400704DF4 /* User.swift in Sources */,
+				3C25266A274052EA00704DF4 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
