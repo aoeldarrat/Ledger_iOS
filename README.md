@@ -6,6 +6,9 @@ Description: The ledger app is a simple leder program which allows users to do t
 - Export ledger(s) to pdf & svg
 
 Figma - https://www.figma.com/files/recent?fuid=1034173980907354083
+Design tools
+- [Dribble](https://dribbble.com/shots/popular/mobile)
+- [Mobbin](https://mobbin.design/browse/ios/apps)
 
 ## Ledgers
 A ledger is a book, a self contained item which serves as a record for book keeping, invoicing, financial balancing, Reciept collection, etc. Inside of each ledger can be one or multiple items or records. 
