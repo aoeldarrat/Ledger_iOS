@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CC84355276FE0A200087539 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84354276FE0A200087539 /* BaseService.swift */; };
+		3CC84357276FE11500087539 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84356276FE11500087539 /* Book.swift */; };
+		3CC84359276FE12100087539 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84358276FE12100087539 /* Balance.swift */; };
+		3CC8435B276FE13000087539 /* BalanceDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435A276FE13000087539 /* BalanceDirection.swift */; };
+		3CC8435D276FE13D00087539 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435C276FE13D00087539 /* Entry.swift */; };
+		3CC8435F276FE14B00087539 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435E276FE14B00087539 /* Item.swift */; };
+		3CC84361276FE15900087539 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84360276FE15900087539 /* PersistenceManager.swift */; };
+		3CC84363276FE16600087539 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84362276FE16600087539 /* Record.swift */; };
+		3CC84365276FE17200087539 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84364276FE17200087539 /* User.swift */; };
+		D38216218576880CBBD33762 /* Pods_Ledger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */; };
 		D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */; };
 		D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1193B2762C02000E8EFED /* ContentView.swift */; };
 		D5B1193E2762C02100E8EFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B1193D2762C02100E8EFED /* Assets.xcassets */; };
@@ -14,6 +24,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CC84354276FE0A200087539 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		3CC84356276FE11500087539 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		3CC84358276FE12100087539 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		3CC8435A276FE13000087539 /* BalanceDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceDirection.swift; sourceTree = "<group>"; };
+		3CC8435C276FE13D00087539 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		3CC8435E276FE14B00087539 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3CC84360276FE15900087539 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		3CC84362276FE16600087539 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3CC84364276FE17200087539 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		66BC0BAB5215A8B16FB8D5F7 /* Pods-Ledger_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.release.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9B598A159B9DEF40418F1AB5 /* Pods-Ledger_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledger_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B119362762C02000E8EFED /* Ledger_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ledger_iOSApp.swift; sourceTree = "<group>"; };
 		D5B1193B2762C02000E8EFED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +48,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38216218576880CBBD33762 /* Pods_Ledger_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CC84352276FE08600087539 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3CC84354276FE0A200087539 /* BaseService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3CC84353276FE09100087539 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CC84356276FE11500087539 /* Book.swift */,
+				3CC84358276FE12100087539 /* Balance.swift */,
+				3CC8435A276FE13000087539 /* BalanceDirection.swift */,
+				3CC8435C276FE13D00087539 /* Entry.swift */,
+				3CC8435E276FE14B00087539 /* Item.swift */,
+				3CC84360276FE15900087539 /* PersistenceManager.swift */,
+				3CC84362276FE16600087539 /* Record.swift */,
+				3CC84364276FE17200087539 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9BE67D12BB473EC5BB17708F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B598A159B9DEF40418F1AB5 /* Pods-Ledger_iOS.debug.xcconfig */,
+				66BC0BAB5215A8B16FB8D5F7 /* Pods-Ledger_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D5B1192D2762C02000E8EFED = {
 			isa = PBXGroup;
 			children = (
+				3CC84353276FE09100087539 /* Models */,
+				3CC84352276FE08600087539 /* Networking */,
 				D5B119382762C02000E8EFED /* Ledger_iOS */,
 				D5B119372762C02000E8EFED /* Products */,
+				9BE67D12BB473EC5BB17708F /* Pods */,
+				F43604D2D4C490B0B3393AC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +126,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F43604D2D4C490B0B3393AC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B119442762C02100E8EFED /* Build configuration list for PBXNativeTarget "Ledger_iOS" */;
 			buildPhases = (
+				AAF0682DE91E05503FD13D85 /* [CP] Check Pods Manifest.lock */,
 				D5B119322762C02000E8EFED /* Sources */,
 				D5B119332762C02000E8EFED /* Frameworks */,
 				D5B119342762C02000E8EFED /* Resources */,
+				E22CDAA2409D1FDF8B097FD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +201,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAF0682DE91E05503FD13D85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ledger_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E22CDAA2409D1FDF8B097FD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5B119322762C02000E8EFED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC8435D276FE13D00087539 /* Entry.swift in Sources */,
+				3CC84357276FE11500087539 /* Book.swift in Sources */,
+				3CC84363276FE16600087539 /* Record.swift in Sources */,
+				3CC84359276FE12100087539 /* Balance.swift in Sources */,
 				D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */,
+				3CC8435F276FE14B00087539 /* Item.swift in Sources */,
 				D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */,
+				3CC84361276FE15900087539 /* PersistenceManager.swift in Sources */,
+				3CC8435B276FE13000087539 /* BalanceDirection.swift in Sources */,
+				3CC84355276FE0A200087539 /* BaseService.swift in Sources */,
+				3CC84365276FE17200087539 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +383,7 @@
 		};
 		D5B119452762C02100E8EFED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B598A159B9DEF40418F1AB5 /* Pods-Ledger_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +413,7 @@
 		};
 		D5B119462762C02100E8EFED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66BC0BAB5215A8B16FB8D5F7 /* Pods-Ledger_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

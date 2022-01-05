@@ -1,0 +1,10 @@
+platform :ios, '13.0'
+
+target 'Ledger_iOS' do
+  use_frameworks!
+
+  pod 'Firebase/Crashlytics'
+
+  pod 'RealmSwift'
+
+end
