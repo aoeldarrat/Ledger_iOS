@@ -31,12 +31,12 @@ val userLedger = Ledger(
 - Export ledger(s) to pdf & svg
 
 ## Priorities
-1. Add Book
-2. Remove Book
-3. Add Page to book
-4. Remove Page
-5. Add/edit Entries to Page
-6. Remove Entries
+1. Add project
+2. Remove project
+3. Add Item to project
+4. Remove Item
+5. Add/edit Entries to Item
+6. Remove Entries from Item
 7. Export book to pdf
 
 ## [Figma](https://www.figma.com/files/recent?fuid=1034173980907354083)
