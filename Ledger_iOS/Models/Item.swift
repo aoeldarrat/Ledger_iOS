@@ -10,10 +10,11 @@ import RealmSwift
 
 class Item: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var recordId: ObjectId?
-    @Persisted var name: String = ""
+    @Persisted var projectId: ObjectId
+    @Persisted var title: String = ""
     @Persisted var desc: String = ""
+    @Persisted var entries: [Entry]?
+    @Persisted var calculatedTotal: Float?
     @Persisted var createdDate: Date?
     @Persisted var lastEditDate: Date?
-    @Persisted var balance: Balance?
 }

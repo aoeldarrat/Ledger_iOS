@@ -8,12 +8,11 @@
 import Foundation
 import RealmSwift
 
-class Book: Object, ObjectKeyIdentifiable {
+class Project: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var name: String = ""
+    @Persisted var title: String = ""
     @Persisted var desc: String = ""
+    @Persisted var items: [Item]?
     @Persisted var createdDate: Date?
     @Persisted var lastEditDate: String?
-    //@Persisted var records: [Record]?
-    @Persisted var balance: Balance = Balance.init()
 }

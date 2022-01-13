@@ -10,9 +10,14 @@ import RealmSwift
 
 class Entry: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var balance: Balance? = Balance.init()
-    @Persisted var runningTotal: Float = 0.0
-    @Persisted var desc: String = ""
-    @Persisted var amount: Float = 0.0
-    @Persisted var date: Date?
+    @Persisted var projectId: ObjectId
+    @Persisted var itemId: ObjectId
+    @Persisted var incomeExpense = IncomeExpense.neutral
+    @Persisted var title: String = ""
+    @Persisted var description: String = ""
+    @Persisted var numberOfUnits: Double = 0
+    @Persisted var createdDate: Date?
+    @Persisted var lastEditDate: Date?
+    @Persisted var numberOfUnits: Float
+    @Persisted var typeOfUnit: UnitType
 }

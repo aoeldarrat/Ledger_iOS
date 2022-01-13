@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3CC84355276FE0A200087539 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84354276FE0A200087539 /* BaseService.swift */; };
-		3CC84357276FE11500087539 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84356276FE11500087539 /* Book.swift */; };
-		3CC84359276FE12100087539 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84358276FE12100087539 /* Balance.swift */; };
-		3CC8435B276FE13000087539 /* BalanceDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435A276FE13000087539 /* BalanceDirection.swift */; };
+		3CC84357276FE11500087539 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84356276FE11500087539 /* Project.swift */; };
+		3CC8435B276FE13000087539 /* IncomeExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435A276FE13000087539 /* IncomeExpense.swift */; };
 		3CC8435D276FE13D00087539 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435C276FE13D00087539 /* Entry.swift */; };
 		3CC8435F276FE14B00087539 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435E276FE14B00087539 /* Item.swift */; };
 		3CC84361276FE15900087539 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84360276FE15900087539 /* PersistenceManager.swift */; };
-		3CC84363276FE16600087539 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84362276FE16600087539 /* Record.swift */; };
 		3CC84365276FE17200087539 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84364276FE17200087539 /* User.swift */; };
 		D38216218576880CBBD33762 /* Pods_Ledger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */; };
+		D5645654278FEAA800B770AC /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5645653278FEAA800B770AC /* UnitType.swift */; };
 		D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */; };
 		D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1193B2762C02000E8EFED /* ContentView.swift */; };
 		D5B1193E2762C02100E8EFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B1193D2762C02100E8EFED /* Assets.xcassets */; };
@@ -25,17 +24,16 @@
 
 /* Begin PBXFileReference section */
 		3CC84354276FE0A200087539 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		3CC84356276FE11500087539 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		3CC84358276FE12100087539 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
-		3CC8435A276FE13000087539 /* BalanceDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceDirection.swift; sourceTree = "<group>"; };
+		3CC84356276FE11500087539 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		3CC8435A276FE13000087539 /* IncomeExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeExpense.swift; sourceTree = "<group>"; };
 		3CC8435C276FE13D00087539 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		3CC8435E276FE14B00087539 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3CC84360276FE15900087539 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
-		3CC84362276FE16600087539 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		3CC84364276FE17200087539 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		66BC0BAB5215A8B16FB8D5F7 /* Pods-Ledger_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.release.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9B598A159B9DEF40418F1AB5 /* Pods-Ledger_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledger_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5645653278FEAA800B770AC /* UnitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitType.swift; sourceTree = "<group>"; };
 		D5B119362762C02000E8EFED /* Ledger_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ledger_iOSApp.swift; sourceTree = "<group>"; };
 		D5B1193B2762C02000E8EFED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,14 +64,13 @@
 		3CC84353276FE09100087539 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3CC84356276FE11500087539 /* Book.swift */,
-				3CC84358276FE12100087539 /* Balance.swift */,
-				3CC8435A276FE13000087539 /* BalanceDirection.swift */,
-				3CC8435C276FE13D00087539 /* Entry.swift */,
-				3CC8435E276FE14B00087539 /* Item.swift */,
-				3CC84360276FE15900087539 /* PersistenceManager.swift */,
-				3CC84362276FE16600087539 /* Record.swift */,
 				3CC84364276FE17200087539 /* User.swift */,
+				3CC84356276FE11500087539 /* Project.swift */,
+				3CC8435E276FE14B00087539 /* Item.swift */,
+				3CC8435C276FE13D00087539 /* Entry.swift */,
+				D5645653278FEAA800B770AC /* UnitType.swift */,
+				3CC8435A276FE13000087539 /* IncomeExpense.swift */,
+				3CC84360276FE15900087539 /* PersistenceManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,14 +246,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC8435D276FE13D00087539 /* Entry.swift in Sources */,
-				3CC84357276FE11500087539 /* Book.swift in Sources */,
-				3CC84363276FE16600087539 /* Record.swift in Sources */,
-				3CC84359276FE12100087539 /* Balance.swift in Sources */,
+				D5645654278FEAA800B770AC /* UnitType.swift in Sources */,
+				3CC84357276FE11500087539 /* Project.swift in Sources */,
 				D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */,
 				3CC8435F276FE14B00087539 /* Item.swift in Sources */,
 				D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */,
 				3CC84361276FE15900087539 /* PersistenceManager.swift in Sources */,
-				3CC8435B276FE13000087539 /* BalanceDirection.swift in Sources */,
+				3CC8435B276FE13000087539 /* IncomeExpense.swift in Sources */,
 				3CC84355276FE0A200087539 /* BaseService.swift in Sources */,
 				3CC84365276FE17200087539 /* User.swift in Sources */,
 			);
