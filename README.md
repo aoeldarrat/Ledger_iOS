@@ -1,8 +1,33 @@
 # Ledger iOS
 
+Terms
+- Project: Main object, can contain many Items, which in turn contain entries
+- Items: Belongs to a project, and contains Entries
+- Entry: Belongs to an Item
+
 Description: The ledger app is a simple leder program which allows users to do the following things
-- Add multiple ledgers
-- Add multiple items for each ledger
+- Add multiple Projects (ledgers) to keep track of different Items. i.e 
+
+User 1 Ledger
+```
+val userLedger = Ledger(
+  projects = ListOf(
+    Project(
+      title: Business, 
+      items: ListOf(
+        Item(
+          title: Account 104
+          entries: ListOf(
+            Entry(title: payment for work, amount: $1000),
+            Entry(title: payment for work2, amount: $100)
+          )
+      )
+    ))
+
+)
+```
+
+
 - Export ledger(s) to pdf & svg
 
 ## Priorities
@@ -12,7 +37,7 @@ Description: The ledger app is a simple leder program which allows users to do t
 4. Remove Page
 5. Add/edit Entries to Page
 6. Remove Entries
-7. Export book to pdf, svg
+7. Export book to pdf
 
 ## [Figma](https://www.figma.com/files/recent?fuid=1034173980907354083)
 
