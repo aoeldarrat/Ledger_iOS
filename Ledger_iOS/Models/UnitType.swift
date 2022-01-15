@@ -5,9 +5,7 @@
 //  Created by Abdulrahman Eldarrat on 1/12/22.
 //
 
-import Foundation
-import SwiftUI
-
+import RealmSwift
 
 enum Weight {
     case lbs
@@ -25,10 +23,10 @@ enum Length {
     case millimeter
 }
 
-enum UnitType {
-    case weight
-    case length
-    case none
+@objc enum UnitType: Int {
+    case weight = 1
+    case length = 2
+    case none = 0
 }
 
 

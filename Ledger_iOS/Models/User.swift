@@ -5,14 +5,24 @@
 //  Created by Elisha Chirchir on 20/12/2021.
 //
 
-import Foundation
 import RealmSwift
 
 class User: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var preferredLanguage: String?
-    @Persisted var preferredCurrency: String?
-    //@Persisted var books: [Book]?
+    
+    //Usually in creation order
+    @objc dynamic var id: String
+    @objc dynamic var projects: Array<Project>
+    @objc dynamic var creationDate: Date?
+    @objc dynamic var firstName: Date?
+    @objc dynamic var lastName: String?
+    
+    init(user: User) {
+        id = user.id
+        projects = user.projects
+        creationDate = user.creationDate
+        firstName = user.firstName
+        lastName = user.lastName
+    }
 }
 
 

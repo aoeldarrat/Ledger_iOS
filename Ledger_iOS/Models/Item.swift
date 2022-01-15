@@ -5,16 +5,26 @@
 //  Created by Elisha Chirchir on 20/12/2021.
 //
 
-import Foundation
 import RealmSwift
 
 class Item: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var projectId: ObjectId
-    @Persisted var title: String = ""
-    @Persisted var desc: String = ""
-    @Persisted var entries: [Entry]?
-    @Persisted var calculatedTotal: Float?
-    @Persisted var createdDate: Date?
-    @Persisted var lastEditDate: Date?
+    @objc dynamic var id: String
+    @objc dynamic var projectId: String
+    @objc dynamic var title: String?
+    @objc dynamic var desc: String?
+    @objc dynamic var entries: Array<Entry>?
+    @objc dynamic var calculatedTotal: Float = 0.0
+    @objc dynamic var createdDate: Date?
+    @objc dynamic var lastEditDate: Date?
+    
+    init(item: Item) {
+        id = item.id
+        projectId = item.projectId
+        title = item.title
+        desc = item.desc
+        entries = item.entries
+        calculatedTotal = item.calculatedTotal
+        createdDate = item.createdDate
+        lastEditDate = item.lastEditDate
+    }
 }

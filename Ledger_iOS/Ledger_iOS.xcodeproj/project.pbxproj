@@ -12,7 +12,6 @@
 		3CC8435B276FE13000087539 /* IncomeExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435A276FE13000087539 /* IncomeExpense.swift */; };
 		3CC8435D276FE13D00087539 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435C276FE13D00087539 /* Entry.swift */; };
 		3CC8435F276FE14B00087539 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435E276FE14B00087539 /* Item.swift */; };
-		3CC84361276FE15900087539 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84360276FE15900087539 /* PersistenceManager.swift */; };
 		3CC84365276FE17200087539 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84364276FE17200087539 /* User.swift */; };
 		D38216218576880CBBD33762 /* Pods_Ledger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */; };
 		D5645654278FEAA800B770AC /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5645653278FEAA800B770AC /* UnitType.swift */; };
@@ -28,7 +27,6 @@
 		3CC8435A276FE13000087539 /* IncomeExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeExpense.swift; sourceTree = "<group>"; };
 		3CC8435C276FE13D00087539 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		3CC8435E276FE14B00087539 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		3CC84360276FE15900087539 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		3CC84364276FE17200087539 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		66BC0BAB5215A8B16FB8D5F7 /* Pods-Ledger_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.release.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9B598A159B9DEF40418F1AB5 /* Pods-Ledger_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				3CC8435C276FE13D00087539 /* Entry.swift */,
 				D5645653278FEAA800B770AC /* UnitType.swift */,
 				3CC8435A276FE13000087539 /* IncomeExpense.swift */,
-				3CC84360276FE15900087539 /* PersistenceManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,7 +248,6 @@
 				D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */,
 				3CC8435F276FE14B00087539 /* Item.swift in Sources */,
 				D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */,
-				3CC84361276FE15900087539 /* PersistenceManager.swift in Sources */,
 				3CC8435B276FE13000087539 /* IncomeExpense.swift in Sources */,
 				3CC84355276FE0A200087539 /* BaseService.swift in Sources */,
 				3CC84365276FE17200087539 /* User.swift in Sources */,
