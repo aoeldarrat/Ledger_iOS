@@ -7,7 +7,7 @@
 
 import RealmSwift
 
-@objc enum IncomeExpense: Int, Codable, Equatable  {
+enum IncomeExpense: Int, Codable, Equatable  {
     case income = 1 // Net gain
     case expense = -1 //Net loss
     case neutral = 0//No gain or loss

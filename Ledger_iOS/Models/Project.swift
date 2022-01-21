@@ -7,13 +7,26 @@
 
 import RealmSwift
 
-class Project: Object, ObjectKeyIdentifiable {
-    @objc dynamic var id: String
-    @objc dynamic var title: String = ""
-    @objc dynamic var stringDescription: String = ""
-    @objc dynamic var items: Array<Item>?
-    @objc dynamic var createdDate: Date?
-    @objc dynamic var lastEditDate: Date?
+class ProjectObject: Object, ObjectKeyIdentifiable {
+    @Persisted(primaryKey: true) var id: String
+    @Persisted var title: String = ""
+    @Persisted var stringDescription: String = ""
+    @Persisted var items: MutableSet<Item>
+    @Persisted var createdDate: Date?
+    @Persisted var lastEditDate: Date?
+    
+    override static func primaryKey() -> String? {
+      "id"
+    }
+}
+
+class Project {
+    @Persisted var id: String
+    @Persisted var title: String = ""
+    @Persisted var stringDescription: String = ""
+    @Persisted var items: Array<Item>
+    @Persisted var createdDate: Date?
+    @Persisted var lastEditDate: Date?
     
     override static func primaryKey() -> String? {
       "id"

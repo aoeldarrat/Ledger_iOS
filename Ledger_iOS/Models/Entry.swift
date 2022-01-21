@@ -7,17 +7,34 @@
 
 import RealmSwift
 
-class Entry: Object, ObjectKeyIdentifiable {
-    @objc dynamic var id: String
-    @objc dynamic var projectId: String
-    @objc dynamic var itemId: String
-    @objc dynamic var incomeExpense: IncomeExpense
-    @objc dynamic var title: String = ""
-    @objc dynamic var desc: String = ""
-    @objc dynamic var createdDate: Date?
-    @objc dynamic var lastEditDate: Date?
-    @objc dynamic var numberOfUnits: Float
-    @objc dynamic var typeOfUnit: UnitType
+class EntryObject: Object, ObjectKeyIdentifiable {
+    @Persisted(primaryKey: true) var id: String
+    @Persisted var projectId: String
+    @Persisted var itemId: String
+    @Persisted var incomeExpense: String
+    @Persisted var title: String = ""
+    @Persisted var desc: String = ""
+    @Persisted var createdDate: Date?
+    @Persisted var lastEditDate: Date?
+    @Persisted var numberOfUnits: Float
+    @Persisted var typeOfUnit: String
+
+    override static func primaryKey() -> String? {
+      "id"
+    }
+}
+
+class Entry {
+    var id: String
+    var projectId: String
+    var itemId: String
+    var incomeExpense: IncomeExpense
+    var title: String = ""
+    var desc: String = ""
+    var createdDate: Date?
+    var lastEditDate: Date?
+    var numberOfUnits: Float
+    var typeOfUnit: UnitType
 
     
     init(entry: Entry) {

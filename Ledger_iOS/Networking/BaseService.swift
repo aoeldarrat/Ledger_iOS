@@ -14,27 +14,27 @@ class BaseService: ObservableObject {
     static let itemIdentifier = "item"
     static let entryIdentifier = "entry"
     
-    private var projectResults: Results<Project>
-    private var itemResults: Results<Item>
-    private var entryResults: Results<Entry>
+    private var projectResults: Results<ProjectObject>
+    private var itemResults: Results<ItemObject>
+    private var entryResults: Results<EntryObject>
     
     
     init(realm: Realm) {
-        projectResults = realm.objects(Project.self)
-        itemResults = realm.objects(Item.self)
-        entryResults = realm.objects(Entry.self)
+        projectResults = realm.objects(ProjectObject.self)
+        itemResults = realm.objects(ItemObject.self)
+        entryResults = realm.objects(EntryObject.self)
     }
     
     var projects: [Project] {
-        projectResults.map(Project.init)
+        projectResults.map(ProjectObject.init)
     }
     
     var items: [Item] {
-        itemResults.map(Item.init)
+        itemResults.map(ItemObject.init)
     }
     
     var entries: [Entry] {
-        entryResults.map(Entry.init)
+        entryResults.map(EntryObject.init)
     }
 }
 
@@ -42,7 +42,7 @@ class BaseService: ObservableObject {
 extension BaseService {
     
     ///Add/Create
-    func createProject(project: Project) {
+    func createProject(project: ProjectObject) {
         objectWillChange.send()
         do {
             let realm = try Realm()
@@ -55,7 +55,7 @@ extension BaseService {
         }
     }
     
-    func createItem(item: Item) {
+    func createItem(item: ItemObject) {
         objectWillChange.send()
         
         do {
@@ -69,7 +69,7 @@ extension BaseService {
         }
     }
     
-    func createEntry(entry: Entry) {
+    func createEntry(entry: EntryObject) {
         objectWillChange.send()
         
         do {
@@ -84,11 +84,11 @@ extension BaseService {
     }
     
     /// Read
-    func getProjects() -> Results<Project>  {
+    func getProjects() -> Results<ProjectObject>  {
         do {
             let realm = try Realm()
             
-            let readProjects = realm.objects(Project.self)
+            let readProjects = realm.objects(ProjectObject.self)
             projectResults = readProjects
             return readProjects
         } catch let error {
@@ -97,10 +97,10 @@ extension BaseService {
         return projectResults
     }
     
-    func getItems() -> Results<Item> {
+    func getItems() -> Results<ItemObject> {
         do {
             let realm = try Realm()
-            let readItems = realm.objects(Item.self)
+            let readItems = realm.objects(ItemObject.self)
             itemResults = readItems
             return readItems
         } catch let error {
@@ -109,11 +109,11 @@ extension BaseService {
         return itemResults
     }
     
-    func getEntry() -> Results<Entry> {
+    func getEntry() -> Results<EntryObject> {
         
         do {
             let realm = try Realm()
-            let readEntries = realm.objects(Entry.self)
+            let readEntries = realm.objects(EntryObject.self)
             entryResults = readEntries
             return readEntries
         } catch let error {
@@ -124,13 +124,13 @@ extension BaseService {
     }
     
     /// Update
-    func updateProject(newProject: Project) {
+    func updateProject(newProject: ProjectObject) {
         objectWillChange.send()
         
         do {
             let realm = try Realm()
             realm.create(
-                Project.self,
+                ProjectObject.self,
                 value: newProject,
                 update: .modified
             )
@@ -139,13 +139,13 @@ extension BaseService {
         }
     }
     
-    func updateItem(newItem: Item) {
+    func updateItem(newItem: ItemObject) {
         objectWillChange.send()
         
         do {
             let realm = try Realm()
             realm.create(
-                Item.self,
+                ItemObject.self,
                 value: newItem,
                 update: .modified
             )
@@ -154,13 +154,13 @@ extension BaseService {
         }
     }
     
-    func updateEntry(newEntry: Entry) {
+    func updateEntry(newEntry: EntryObject) {
         objectWillChange.send()
         
         do {
             let realm = try Realm()
             realm.create(
-                Entry.self,
+                EntryObject.self,
                 value: newEntry,
                 update: .modified
             )

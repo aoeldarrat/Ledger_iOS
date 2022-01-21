@@ -23,7 +23,7 @@ enum Length {
     case millimeter
 }
 
-@objc enum UnitType: Int {
+enum UnitType: Int {
     case weight = 1
     case length = 2
     case none = 0

@@ -7,15 +7,31 @@
 
 import RealmSwift
 
-class Item: Object, ObjectKeyIdentifiable {
-    @objc dynamic var id: String
-    @objc dynamic var projectId: String
-    @objc dynamic var title: String?
-    @objc dynamic var desc: String?
-    @objc dynamic var entries: Array<Entry>?
-    @objc dynamic var calculatedTotal: Float = 0.0
-    @objc dynamic var createdDate: Date?
-    @objc dynamic var lastEditDate: Date?
+//Realm object
+class ItemObject: Object, ObjectKeyIdentifiable {
+    @Persisted var id: String
+    @Persisted var projectId: String
+    @Persisted var title: String?
+    @Persisted var desc: String?
+    @Persisted var entries: MutableSet<Entry>
+    @Persisted var calculatedTotal: Float = 0.0
+    @Persisted var createdDate: Date?
+    @Persisted var lastEditDate: Date?
+    
+    override static func primaryKey() -> String? {
+      "id"
+    }
+}
+
+class Item {
+    var id: String
+    var projectId: String
+    var title: String?
+    var desc: String?
+    var entries: MutableSet<Entry>
+    var calculatedTotal: Float = 0.0
+    var createdDate: Date?
+    var lastEditDate: Date?
     
     init(item: Item) {
         id = item.id

@@ -7,14 +7,29 @@
 
 import RealmSwift
 
-class User: Object, ObjectKeyIdentifiable {
+///Realm Object that represents the User
+class UserObject: Object, ObjectKeyIdentifiable {
     
     //Usually in creation order
-    @objc dynamic var id: String
-    @objc dynamic var projects: Array<Project>
-    @objc dynamic var creationDate: Date?
-    @objc dynamic var firstName: Date?
-    @objc dynamic var lastName: String?
+    @Persisted (primaryKey: true) var id: String
+    @Persisted var projects: MutableSet<ProjectObject>
+    @Persisted var creationDate: Date?
+    @Persisted var firstName: String?
+    @Persisted var lastName: String?
+    
+    override class func primaryKey() -> String? {
+        "id"
+    }
+}
+
+class User {
+    
+    var id: String
+    var projects: Array<Project> //Should this be a set?
+    var creationDate: Date
+    var firstName: String
+    var lastName: String
+    
     
     init(user: User) {
         id = user.id
@@ -23,6 +38,7 @@ class User: Object, ObjectKeyIdentifiable {
         firstName = user.firstName
         lastName = user.lastName
     }
+    
 }
 
 

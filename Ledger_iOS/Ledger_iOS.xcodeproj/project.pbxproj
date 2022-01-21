@@ -14,6 +14,8 @@
 		3CC8435F276FE14B00087539 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8435E276FE14B00087539 /* Item.swift */; };
 		3CC84365276FE17200087539 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC84364276FE17200087539 /* User.swift */; };
 		D38216218576880CBBD33762 /* Pods_Ledger_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */; };
+		D559D44C2792855F006116BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D559D44B2792855F006116BA /* SceneDelegate.swift */; };
+		D559D44F2792953A006116BA /* CoreComponenets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D559D44E2792953A006116BA /* CoreComponenets.swift */; };
 		D5645654278FEAA800B770AC /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5645653278FEAA800B770AC /* UnitType.swift */; };
 		D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */; };
 		D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1193B2762C02000E8EFED /* ContentView.swift */; };
@@ -31,6 +33,9 @@
 		66BC0BAB5215A8B16FB8D5F7 /* Pods-Ledger_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.release.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9B598A159B9DEF40418F1AB5 /* Pods-Ledger_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledger_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Ledger_iOS/Pods-Ledger_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A6D06A5C7A73C2A3EF719628 /* Pods_Ledger_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledger_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D559D44B2792855F006116BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D559D44D279287B7006116BA /* Ledger-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ledger-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D559D44E2792953A006116BA /* CoreComponenets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponenets.swift; sourceTree = "<group>"; };
 		D5645653278FEAA800B770AC /* UnitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitType.swift; sourceTree = "<group>"; };
 		D5B119362762C02000E8EFED /* Ledger_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ledger_iOSApp.swift; sourceTree = "<group>"; };
@@ -104,10 +109,13 @@
 		D5B119382762C02000E8EFED /* Ledger_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D559D44D279287B7006116BA /* Ledger-iOS-Info.plist */,
 				D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */,
 				D5B1193B2762C02000E8EFED /* ContentView.swift */,
 				D5B1193D2762C02100E8EFED /* Assets.xcassets */,
 				D5B1193F2762C02100E8EFED /* Preview Content */,
+				D559D44B2792855F006116BA /* SceneDelegate.swift */,
+				D559D44E2792953A006116BA /* CoreComponenets.swift */,
 			);
 			path = Ledger_iOS;
 			sourceTree = "<group>";
@@ -247,7 +255,9 @@
 				3CC84357276FE11500087539 /* Project.swift in Sources */,
 				D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */,
 				3CC8435F276FE14B00087539 /* Item.swift in Sources */,
+				D559D44C2792855F006116BA /* SceneDelegate.swift in Sources */,
 				D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */,
+				D559D44F2792953A006116BA /* CoreComponenets.swift in Sources */,
 				3CC8435B276FE13000087539 /* IncomeExpense.swift in Sources */,
 				3CC84355276FE0A200087539 /* BaseService.swift in Sources */,
 				3CC84365276FE17200087539 /* User.swift in Sources */,
@@ -385,7 +395,7 @@
 				DEVELOPMENT_TEAM = 2N39ZRN2FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Ledger-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -415,7 +425,7 @@
 				DEVELOPMENT_TEAM = 2N39ZRN2FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Ledger-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

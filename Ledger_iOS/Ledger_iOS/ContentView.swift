@@ -6,18 +6,19 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct MenuItem : Identifiable{
     var id: String
     var name: String
 }
 
-var books = MenuItem(id: "1", name: "Books")
-var records = MenuItem(id: "2", name: "Records")
-var history = MenuItem(id: "3", name: "History")
+var projects = MenuItem(id: "1", name: "Projects")
+var items = MenuItem(id: "2", name: "Items")
+var entries = MenuItem(id: "3", name: "Entries")
 var settings = MenuItem(id: "4", name: "Settings")
 
-var menuItems: [MenuItem] = [books, records, history, settings]
+var menuItems: [MenuItem] = [projects, items, entries, settings]
 
 struct ContentView: View {
     
@@ -30,6 +31,17 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Ledger App")
+        }
+    }
+}
+
+
+struct ProjectMainView: View {
+    var body: some View {
+        
+        var projects = BaseService(realm: )
+        List() {
+            
         }
     }
 }
