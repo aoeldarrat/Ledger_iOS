@@ -36,12 +36,9 @@ struct ContentView: View {
 }
 
 
-struct ProjectMainView: View {
+struct ProjectDetailView: View {
     var body: some View {
         
-        List() {
-            
-        }
     }
 }
 

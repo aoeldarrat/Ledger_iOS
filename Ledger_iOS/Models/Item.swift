@@ -13,7 +13,7 @@ class ItemObject: Object, ObjectKeyIdentifiable {
     @Persisted var projectId: String
     @Persisted var title: String?
     @Persisted var desc: String?
-    @Persisted var entries: List<Entry>
+//    @Persisted var entries: List<String>
     @Persisted var calculatedTotal: Float = 0.0
     @Persisted var createdDate: Date?
     @Persisted var lastEditDate: Date?
@@ -28,7 +28,7 @@ class Item {
     var projectId: String
     var title: String?
     var desc: String?
-    var entries: List<Entry>?
+//    var entries: List<Entry>?
     var calculatedTotal: Float = 0.0
     var createdDate: Date?
     var lastEditDate: Date?
@@ -38,7 +38,7 @@ class Item {
         projectId = item.projectId
         title = item.title
         desc = item.desc
-        entries = item.entries
+//        entries = item.entries
         calculatedTotal = item.calculatedTotal
         createdDate = item.createdDate
         lastEditDate = item.lastEditDate

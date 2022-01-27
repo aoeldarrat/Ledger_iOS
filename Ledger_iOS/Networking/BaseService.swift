@@ -25,7 +25,7 @@ class BaseService: ObservableObject {
         entryResults = realm.objects(EntryObject.self)
     }
     
-    var projects: [Project] {
+    var projects: [ProjectObject] {
         projectResults.map(ProjectObject.init)
     }
     

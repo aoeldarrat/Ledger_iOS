@@ -36,6 +36,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 
 
+
+
+///
+/// Enables the client to migrate to newer and older versions of the realm schemas
+///
 enum RealmMigrator {
   static private func migrationBlock(
     migration: Migration,

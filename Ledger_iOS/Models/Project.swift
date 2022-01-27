@@ -7,16 +7,29 @@
 
 import RealmSwift
 
+/// REALM Representation for project
 class ProjectObject: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: String
     @Persisted var title: String = ""
     @Persisted var stringDescription: String = ""
-    @Persisted var items: List<Item>
     @Persisted var createdDate: Date?
     @Persisted var lastEditDate: Date?
     
     override static func primaryKey() -> String? {
       "id"
+    }
+    
+//    private var items: List<Item>
+
+    func externalize(projectObject: ProjectObject) -> Project {
+        return Project(
+            id = projectObject.id,
+            title = projectObject.title,
+            stringDescription = projectObject.stringDescription,
+//            items = projectObject.items,
+            createdDate = projectObject.createdDate,
+            lastEditDate = projectObject.lastEditDate
+        )
     }
 }
 
@@ -28,12 +41,12 @@ class Project {
     var createdDate: Date?
     var lastEditDate: Date?
     
-    init(project: Project) {
-        id = project.id
-        title = project.title
-        stringDescription = project.stringDescription
-        items = project.items
-        createdDate = project.createdDate
-        lastEditDate = project.lastEditDate
+    init(id: String, title: String, stringDescription: String, items: List<Item>, createdDate: Date, lastEditDate: Date) {
+        self.id = id
+        self.title = title
+        self.stringDescription = stringDescription
+        self.items = items
+        self.createdDate = createdDate
+        self.lastEditDate = lastEditDate
     }
 }
