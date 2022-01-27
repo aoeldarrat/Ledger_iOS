@@ -39,7 +39,6 @@ struct ContentView: View {
 struct ProjectMainView: View {
     var body: some View {
         
-        var projects = BaseService(realm: )
         List() {
             
         }

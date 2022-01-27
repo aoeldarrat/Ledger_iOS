@@ -11,7 +11,7 @@ class ProjectObject: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: String
     @Persisted var title: String = ""
     @Persisted var stringDescription: String = ""
-    @Persisted var items: MutableSet<Item>
+    @Persisted var items: List<Item>
     @Persisted var createdDate: Date?
     @Persisted var lastEditDate: Date?
     
@@ -21,16 +21,12 @@ class ProjectObject: Object, ObjectKeyIdentifiable {
 }
 
 class Project {
-    @Persisted var id: String
-    @Persisted var title: String = ""
-    @Persisted var stringDescription: String = ""
-    @Persisted var items: Array<Item>
-    @Persisted var createdDate: Date?
-    @Persisted var lastEditDate: Date?
-    
-    override static func primaryKey() -> String? {
-      "id"
-    }
+    var id: String
+    var title: String = ""
+    var stringDescription: String = ""
+    var items: List<Item>?
+    var createdDate: Date?
+    var lastEditDate: Date?
     
     init(project: Project) {
         id = project.id

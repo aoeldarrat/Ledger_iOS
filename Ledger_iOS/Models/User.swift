@@ -12,7 +12,7 @@ class UserObject: Object, ObjectKeyIdentifiable {
     
     //Usually in creation order
     @Persisted (primaryKey: true) var id: String
-    @Persisted var projects: MutableSet<ProjectObject>
+    @Persisted var projects: List<ProjectObject>
     @Persisted var creationDate: Date?
     @Persisted var firstName: String?
     @Persisted var lastName: String?
