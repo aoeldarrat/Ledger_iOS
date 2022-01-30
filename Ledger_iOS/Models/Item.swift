@@ -9,11 +9,14 @@ import RealmSwift
 
 //Realm object
 class ItemObject: Object, ObjectKeyIdentifiable {
-    @Persisted var id: String
+    
+    @Persisted(primaryKey: true) var id: String
     @Persisted var projectId: String
     @Persisted var title: String?
     @Persisted var desc: String?
-//    @Persisted var entries: List<String>
+    
+    let entries = List<EntryObject>()
+
     @Persisted var calculatedTotal: Float = 0.0
     @Persisted var createdDate: Date?
     @Persisted var lastEditDate: Date?
@@ -21,6 +24,10 @@ class ItemObject: Object, ObjectKeyIdentifiable {
     override static func primaryKey() -> String? {
       "id"
     }
+    
+    // Inverse to ProjectObject
+    let project = LinkingObjects(fromType: ProjectObject.self, property: "items")
+
 }
 
 class Item {
@@ -28,7 +35,6 @@ class Item {
     var projectId: String
     var title: String?
     var desc: String?
-//    var entries: List<Entry>?
     var calculatedTotal: Float = 0.0
     var createdDate: Date?
     var lastEditDate: Date?
@@ -38,7 +44,6 @@ class Item {
         projectId = item.projectId
         title = item.title
         desc = item.desc
-//        entries = item.entries
         calculatedTotal = item.calculatedTotal
         createdDate = item.createdDate
         lastEditDate = item.lastEditDate

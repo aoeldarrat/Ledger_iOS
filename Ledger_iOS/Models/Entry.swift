@@ -8,6 +8,7 @@
 import RealmSwift
 
 class EntryObject: Object, ObjectKeyIdentifiable {
+    
     @Persisted(primaryKey: true) var id: String
     @Persisted var projectId: String
     @Persisted var itemId: String
@@ -22,6 +23,9 @@ class EntryObject: Object, ObjectKeyIdentifiable {
     override static func primaryKey() -> String? {
       "id"
     }
+    
+    // Inverse to ItemObject
+    let item = LinkingObjects(fromType: ItemObject.self, property: "entries")
 }
 
 class Entry {
