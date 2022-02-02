@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Ledger_iOSApp: App {
+struct Ledger_iOSApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
             ContentView()

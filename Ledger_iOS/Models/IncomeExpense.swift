@@ -5,10 +5,10 @@
 //  Created by Elisha Chirchir on 20/12/2021.
 //
 
-import Foundation
+import RealmSwift
 
-enum BalanceDirection: Int, Codable, Equatable  {
-    case positive = 1 // Net gain
-    case negative = -1 //Net loss
+enum IncomeExpense: Int, Codable, Equatable  {
+    case income = 1 // Net gain
+    case expense = -1 //Net loss
     case neutral = 0//No gain or loss
 }
