@@ -29,11 +29,11 @@ class BaseService: ObservableObject {
         projectResults.map(ProjectObject.init)
     }
     
-    var items: [Item] {
+    var items: [ItemObject] {
         itemResults.map(ItemObject.init)
     }
     
-    var entries: [Entry] {
+    var entries: [EntryObject] {
         entryResults.map(EntryObject.init)
     }
 }
