@@ -17,8 +17,9 @@
 		D559D44C2792855F006116BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D559D44B2792855F006116BA /* SceneDelegate.swift */; };
 		D559D44F2792953A006116BA /* CoreComponenets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D559D44E2792953A006116BA /* CoreComponenets.swift */; };
 		D5645654278FEAA800B770AC /* UnitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5645653278FEAA800B770AC /* UnitType.swift */; };
+		D5749F0B27ACD93500E2DEAB /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5749F0A27ACD93500E2DEAB /* ProjectsView.swift */; };
 		D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */; };
-		D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1193B2762C02000E8EFED /* ContentView.swift */; };
+		D5B1193C2762C02000E8EFED /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1193B2762C02000E8EFED /* MainView.swift */; };
 		D5B1193E2762C02100E8EFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B1193D2762C02100E8EFED /* Assets.xcassets */; };
 		D5B119412762C02100E8EFED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B119402762C02100E8EFED /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -37,9 +38,10 @@
 		D559D44D279287B7006116BA /* Ledger-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Ledger-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D559D44E2792953A006116BA /* CoreComponenets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponenets.swift; sourceTree = "<group>"; };
 		D5645653278FEAA800B770AC /* UnitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitType.swift; sourceTree = "<group>"; };
+		D5749F0A27ACD93500E2DEAB /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		D5B119362762C02000E8EFED /* Ledger_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ledger_iOSApp.swift; sourceTree = "<group>"; };
-		D5B1193B2762C02000E8EFED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5B1193B2762C02000E8EFED /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D5B1193D2762C02100E8EFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5B119402762C02100E8EFED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,12 +88,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D5749F0927ACD90D00E2DEAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5B1193B2762C02000E8EFED /* MainView.swift */,
+				D5749F0A27ACD93500E2DEAB /* ProjectsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D5B1192D2762C02000E8EFED = {
 			isa = PBXGroup;
 			children = (
 				3CC84353276FE09100087539 /* Models */,
 				3CC84352276FE08600087539 /* Networking */,
-				D5B119382762C02000E8EFED /* Ledger_iOS */,
+				D5B119382762C02000E8EFED /* Ledger */,
 				D5B119372762C02000E8EFED /* Products */,
 				9BE67D12BB473EC5BB17708F /* Pods */,
 				F43604D2D4C490B0B3393AC1 /* Frameworks */,
@@ -106,18 +117,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5B119382762C02000E8EFED /* Ledger_iOS */ = {
+		D5B119382762C02000E8EFED /* Ledger */ = {
 			isa = PBXGroup;
 			children = (
+				D5749F0927ACD90D00E2DEAB /* Views */,
 				D559D44D279287B7006116BA /* Ledger-iOS-Info.plist */,
 				D5B119392762C02000E8EFED /* Ledger_iOSApp.swift */,
-				D5B1193B2762C02000E8EFED /* ContentView.swift */,
 				D5B1193D2762C02100E8EFED /* Assets.xcassets */,
 				D5B1193F2762C02100E8EFED /* Preview Content */,
 				D559D44B2792855F006116BA /* SceneDelegate.swift */,
 				D559D44E2792953A006116BA /* CoreComponenets.swift */,
 			);
-			path = Ledger_iOS;
+			path = Ledger;
 			sourceTree = "<group>";
 		};
 		D5B1193F2762C02100E8EFED /* Preview Content */ = {
@@ -253,9 +264,10 @@
 				3CC8435D276FE13D00087539 /* Entry.swift in Sources */,
 				D5645654278FEAA800B770AC /* UnitType.swift in Sources */,
 				3CC84357276FE11500087539 /* Project.swift in Sources */,
-				D5B1193C2762C02000E8EFED /* ContentView.swift in Sources */,
+				D5B1193C2762C02000E8EFED /* MainView.swift in Sources */,
 				3CC8435F276FE14B00087539 /* Item.swift in Sources */,
 				D559D44C2792855F006116BA /* SceneDelegate.swift in Sources */,
+				D5749F0B27ACD93500E2DEAB /* ProjectsView.swift in Sources */,
 				D5B1193A2762C02000E8EFED /* Ledger_iOSApp.swift in Sources */,
 				D559D44F2792953A006116BA /* CoreComponenets.swift in Sources */,
 				3CC8435B276FE13000087539 /* IncomeExpense.swift in Sources */,
@@ -391,7 +403,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ledger_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Ledger/Preview Content\"";
 				DEVELOPMENT_TEAM = 2N39ZRN2FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -421,7 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ledger_iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Ledger/Preview Content\"";
 				DEVELOPMENT_TEAM = 2N39ZRN2FM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
