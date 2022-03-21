@@ -24,7 +24,7 @@ class ProjectObject: Object, ObjectKeyIdentifiable {
     }
 }
 
-class Project {
+class Project: Identifiable {
     var id: String
     var title: String = ""
     var stringDescription: String = ""

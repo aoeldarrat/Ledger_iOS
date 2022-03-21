@@ -11,7 +11,7 @@ import SwiftUI
 struct Ledger_iOSApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

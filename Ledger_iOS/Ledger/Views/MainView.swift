@@ -1,9 +1,10 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Ledger_iOS
 //
 //  Created by Abdulrahman Eldarrat on 12/9/21.
 //
+///The base view which represents the first screen the user is taken to in the app
 
 import SwiftUI
 import RealmSwift
@@ -20,23 +21,22 @@ var settings = MenuItem(id: "4", name: "Settings")
 
 var menuItems: [MenuItem] = [projects, items, entries, settings]
 
-struct ContentView: View {
+struct MainView: View {
     
     var body: some View {
         NavigationView {
-            
-            List(menuItems) { menu in
-                NavigationLink(destination: Text(menu.name)) {
-                    Text(menu.name)
+            VStack {
+                Text("Home Page")
+                NavigationLink(destination: ProjectsView()) {
+                    Text("My projects")
                 }
             }
-            .navigationTitle("Ledger App")
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }

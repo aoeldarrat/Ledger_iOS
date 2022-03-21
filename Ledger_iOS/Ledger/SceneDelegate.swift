@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let realm = try Realm()
         let window = UIWindow(windowScene: windowScene)
           
-        let contentView = ContentView().environmentObject(BaseService(realm: realm))
-        window.rootViewController = UIHostingController(rootView: contentView)
+        let mainView = MainView().environmentObject(BaseService(realm: realm))
+        window.rootViewController = UIHostingController(rootView: mainView)
         
         self.window = window
         window.makeKeyAndVisible()
